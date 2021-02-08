@@ -1,0 +1,26 @@
+---
+title: "Design principles"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Design principles}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Transparent parallelisation
+
+We believe that users should be able to decide *if* and *how* the functions
+provided in this package should run in parallel.
+
+This is made easy by the [future framework](https://cran.r-project.org/package=future) 
+([introduction video](https://resources.rstudio.com/rstudio-conf-2020/future-simple-async-parallel-amp-distributed-processing-in-r-whats-next-henrik-bengtsson)).
+
+Similarly, the option to add a progress bar is left to the user by relying on 
+the [progressr package](https://cran.r-project.org/package=progressr).
