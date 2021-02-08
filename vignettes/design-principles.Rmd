@@ -19,6 +19,8 @@ This package is built with a clear set of design principles based on current
 best practices. These design principles have been established before writing any
 code to make sure obstacles along the way would not lower our expectations.
 
+## Scope
+
 ## Naming conventions
 
 ## Transparent parallelisation
