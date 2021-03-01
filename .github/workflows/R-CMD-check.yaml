@@ -89,7 +89,6 @@ jobs:
           if (any(identical(Sys.getenv("DEPS"), "hard"), grepl("^Config/testthat", readLines("DESCRIPTION"))) {
             remotes::install_cran("testthat")
           }
-          Config/testthat
           remotes::install_cran("rcmdcheck")
         shell: Rscript {0}
 
